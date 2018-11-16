@@ -16,7 +16,7 @@ class Acesso {
     public function Query($sql) {
         $this->result = mysqli_query($this->cnx,$sql, MYSQLI_STORE_RESULT);
     }
-
+    
     
     public function __destruct() {
         mysqli_close($this->cnx);
