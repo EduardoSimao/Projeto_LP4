@@ -42,6 +42,12 @@ function Processo($Processo) {
                     echo '<script>alert("Alterado com sucesso !");</script>'; 
                     echo '<script>window.location="../view/userPerfil.php";</script>'; 
                 }
+            } else  if (isset($_GET['ok'])) {
+                if ($_GET['ok'] == "excluir") {
+                    $usuario->excluir($_GET['id']);
+                    echo '<script>alert("Excluido com sucesso !");</script>';
+                    echo '<script>window.location="../controller/logout.php";</script>'; 
+                }
             }
             break;
     }

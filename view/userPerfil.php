@@ -97,17 +97,16 @@ $run_user = mysqli_query($connection, $select_user);
                                     </fieldset>
                                 </div>
                             </div>
-<?php } ?>
+
                             <div class="form-group">
                                 <div class="col-xs-12">
                                     <br>
                                     <input type="button" class="btn btn-lg btn-success" name="button" id="button" value="Alterar" onclick="validar(document.editform);"/>
                                     <input type="hidden" name="ok" id="ok" />
-                                    <button class="btn btn-lg btn-danger" type="button"><i class="glyphicon glyphicon-remove"></i> Excluir Perfil</button>
-                                    
-
-                                </div>
+                                    <input class="btn btn-lg btn-danger" type="button" value=" Excluir Perfil" onclick="javascript: if (confirm('Você realmente deseja excluir esta mensagem?'))location.href='userPerfil.php?ok=excluir&id=<?php echo $row["id"]; ?>'" />
+                                </div>                            
                             </div>
+<?php } ?>
                         </form>
                     </div>              
                 </div><!--/tab-pane-->

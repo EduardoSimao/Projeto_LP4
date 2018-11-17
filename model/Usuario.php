@@ -53,4 +53,15 @@ class Usuario {
         $this->Result = $Acesso->result;
     }
 
+    public function excluir($id) {
+
+        $delete = 'delete from users where id="' . $id . '"';
+
+        $Acesso = new Acesso();
+
+        $Acesso->Conexao();
+
+        $Acesso->Query($delete);
+    }
+
 }
