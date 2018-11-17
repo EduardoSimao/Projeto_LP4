@@ -63,5 +63,19 @@ class Usuario {
 
         $Acesso->Query($delete);
     }
+    public function alterarImagem($nome_imagem, $id) {
+
+        $update = 'update users set foto="' . $nome_imagem . '" where id="' . $id . '"';
+
+        $Acesso = new Acesso();
+
+        $Acesso->Conexao();
+
+        $Acesso->Query($update);
+
+        $this->Linha = mysqli_num_rows($Acesso->result);
+
+        $this->Result = $Acesso->result;
+    }
 
 }

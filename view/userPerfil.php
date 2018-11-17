@@ -41,19 +41,14 @@ $run_user = mysqli_query($connection, $select_user);
         <?php include("menu.php"); ?>
     <header>
 <?php while ($row = mysqli_fetch_array($run_user)) { ?>      
-    <div class="text-center">
-        <center>
-            <img src="../view/img/<?php echo $row['foto']; ?>" class="avatar img-circle img-thumbnail" alt="avatar">
-            <h6>Alterar Foto</h6>
-            <input type="file" class="text-center center-block file-upload">
-        </center>
-    </div>
+    
+    <?php include("fotoUser.php"); ?>
     
     <div class="container bootstrap snippet">        
         <div class="row">
-            <div class="col-sm-2">           
+            <div class="col-sm-0">           
             </div>
-            <div class="col-sm-10">            
+            <div class="col-sm-12">            
                 <div class="tab-content">
                     <div class="tab-pane active">
                         <form action="" name="editform" method="post">
@@ -97,13 +92,15 @@ $run_user = mysqli_query($connection, $select_user);
                                     </fieldset>
                                 </div>
                             </div>
-
                             <div class="form-group">
                                 <div class="col-xs-12">
+                                <center>
                                     <br>
-                                    <input type="button" class="btn btn-lg btn-success" name="button" id="button" value="Alterar" onclick="validar(document.editform);"/>
-                                    <input type="hidden" name="ok" id="ok" />
-                                    <input class="btn btn-lg btn-danger" type="button" value=" Excluir Perfil" onclick="javascript: if (confirm('Você realmente deseja excluir esta mensagem?'))location.href='userPerfil.php?ok=excluir&id=<?php echo $row["id"]; ?>'" />
+                                    <input type="button" class="btn btn-success" name="button" id="button" value="Alterar Dados" onclick="validarInformacao(document.editform);"/>
+                                    <input type="hidden" name="ok" id="ok" />                                    
+                                    <input type="hidden" name="processo"/>
+                                    <input class="btn btn-danger" type="button" value=" Excluir Perfil" onclick="javascript: if (confirm('Você realmente deseja excluir seu Perfil?'))location.href='userPerfil.php?ok=excluir&id=<?php echo $row["id"]; ?>'" />
+                                </center>
                                 </div>                            
                             </div>
 <?php } ?>
