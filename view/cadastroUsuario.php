@@ -24,26 +24,26 @@ Processo('incluir');
                     <div class="col-sm-12">
                         <div class="row">
                             <div class="col-sm-6 form-group">
-                                <label>Nome Completo</label>
+                                <label>Nome Completo:</label>
                                 <input type="text" placeholder="Insira seu nome completo" class="form-control" name="nome">
                             </div>
                             <div class="col-sm-6 form-group">
-                                <label>Data de Nascimento</label>
+                                <label>Data de Nascimento:</label>
                                 <input type="date" class="form-control" name="dtNascimento">
                             </div>					
                             <div class="col-sm-6 form-group">
-                                <label>E-mail</label>
+                                <label>E-mail:</label>
                                 <input type="text" placeholder="Insira seu e-mail" class="form-control">
                             </div>
                             <script src="js/cadastroUsuario.js"></script>
                         </div>
                         <div class="row">
                             <div class="col-sm-6 form-group">
-                                <label>Usuario</label>
+                                <label>Usuario:</label>
                                 <input type="text" placeholder="Usuario" class="form-control" name="username">
                             </div>
                             <div class="col-sm-6 form-group">
-                                <label>Senha</label>
+                                <label>Senha:</label>
                                 <input type="password" placeholder="Senha" class="form-control" name="senha">
                             </div>
                         </div>
