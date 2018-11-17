@@ -20,9 +20,15 @@ $check_user = mysqli_num_rows($run_user);
 
 if ($check_user == 1){
     session_start();
+    $_SESSION['id_usurio'] = $cadastro['id'];
     $_SESSION['nome'] = $cadastro['nome'];
+    $_SESSION['username'] = $cadastro['username'];
+    $_SESSION['senha'] = $cadastro['senha'];
+    $_SESSION['sexo'] = $cadastro['sexo'];
+    $_SESSION['data_nascimento'] = $cadastro['data_nascimento'];
+    $_SESSION['email'] = $cadastro['email'];
 
-    echo '<script>window.location="../index.php";</script>';
+    echo '<script>window.location="../view/homepage.php";</script>';
 } else {
 
     // falhou o login 

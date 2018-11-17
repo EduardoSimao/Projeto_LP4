@@ -36,6 +36,21 @@ class Usuario {
         $this->Linha = @mysqli_affected_rows($Acesso->result);
 
         $this->Result = $Acesso->result;
-    } 
+    }
+    
+    public function alterar($nome, $username, $senha, $data_nascimento, $genero, $telefone, $email, $id) {
+
+        $update = 'update users set nome="' . $nome . '", username="' . $username . '" , senha="' . $senha . '", data_nascimento="' . $data_nascimento . '", sexo="' . $genero . '", telefone="' . $telefone . '", email="' . $email . '" where id="' . $id . '"';
+
+        $Acesso = new Acesso();
+
+        $Acesso->Conexao();
+
+        $Acesso->Query($update);
+
+        $this->Linha = mysqli_num_rows($Acesso->result);
+
+        $this->Result = $Acesso->result;
+    }
 
 }

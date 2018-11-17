@@ -26,6 +26,23 @@ function Processo($Processo) {
             }
  
             break;
-        
+        case 'editar':
+
+            global $linha; 
+            global $rs;
+
+            $usuario = new Usuario();
+            $usuario->consultar("select * from user where id=" .  $_SESSION['id_usurio']);
+            $linha = $usuario->Linha;
+            $rs = $usuario->Result;
+
+            if (isset($_POST['ok'])) {
+                if ($_POST['ok'] == 'true'){
+                    $usuario->alterar($_POST['nome'], $_POST["username"], $_POST["senha"], $_POST["dtNascimento"], $_POST["genero"], $_POST['telefne'], $_POST["email"],  $_SESSION['id_usurio'] );
+                    echo '<script>alert("Alterado com sucesso !");</script>'; 
+                    echo '<script>window.location="../index.php";</script>'; 
+                }
+            }
+            break;
     }
 }
