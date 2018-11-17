@@ -25,7 +25,7 @@ if(empty($_SESSION['nome'])){
                 <li><a href="#">Cadastrar evento</a></li>
               </ul>
             </li>
-            <li><a href="#">Perfil</a></li>
+            <li><a href="userPerfil.php">Perfil</a></li>
             <li><a href="#">Sobre</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">

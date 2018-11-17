@@ -15,7 +15,7 @@ class Usuario {
     
     public function incluir($nome, $username, $senha, $data_nascimento, $genero) { 
 
-        $insert = "Insert into users(nome, username, senha, data_nascimento, sexo) values ('$nome', '$username', '$senha', '$data_nascimento', '$genero')";
+        $insert = "Insert into users(nome, username, senha, data_nascimento, sexo, foto) values ('$nome', '$username', '$senha', '$data_nascimento', '$genero', 'avatar_2x.png')";
 			
         $Acesso = new Acesso();
 
