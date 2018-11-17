@@ -36,6 +36,6 @@ class Usuario {
         $this->Linha = @mysqli_affected_rows($Acesso->result);
 
         $this->Result = $Acesso->result;
-    }
+    } 
 
 }
