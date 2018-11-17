@@ -38,8 +38,8 @@ class Agenda {
     
     public function alterar($titulo, $data, $hora, $descricao, $local, $idagenda) { 
 
-        $update = "update agenda set titulo='$titulo', data='$data', hora='$hora', descricao='$descricao',
-        local='$local' where idagenda='$idagenda')";
+        $update = 'update agenda set titulo="' . $titulo . '", data="' . $data . '", hora="' . $hora . '"
+        , descricao="' . $descricao . '", local="' . $local . '" where idagenda="' . $idagenda . '"';
 			
         $Acesso = new Acesso();
 
@@ -50,7 +50,7 @@ class Agenda {
 
     public function excluir($idagenda) { 
 
-        $delete = "delete from agenda where idagenda='$idagenda')";
+        $delete = 'delete from agenda where idagenda="' . $idagenda . '"';
 			
         $Acesso = new Acesso();
 
