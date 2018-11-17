@@ -24,28 +24,29 @@ Processo('incluir');
                     <div class="col-sm-12">
                         <div class="row">
                             <div class="col-sm-6 form-group">
-                                <label>Nome</label>
-                                <input type="text" placeholder="Insira seu nome" class="form-control">
+                                <label>Nome Completo</label>
+                                <input type="text" placeholder="Insira seu nome completo" class="form-control" name="nome">
                             </div>
                             <div class="col-sm-6 form-group">
-                                <label>Sobrenome</label>
-                                <input type="text" placeholder="Insira seu sobrenome" class="form-control">
+                                <label>Data de Nascimento</label>
+                                <input type="date" class="form-control" name="dtNascimento">
+                            </div>					
+                            <div class="col-sm-6 form-group">
+                                <label>E-mail</label>
+                                <input type="text" placeholder="Insira seu e-mail" class="form-control">
                             </div>
-                        </div>					
-                        <div class="form-group">
-                            <label>E-mail</label>
-                            <input type="text" placeholder="Insira seu e-mail" class="form-control">
+                            <script src="js/cadastroUsuario.js"></script>
                         </div>
                         <div class="row">
                             <div class="col-sm-6 form-group">
                                 <label>Usuario</label>
-                                <input type="text" placeholder="Usuario" class="form-control">
+                                <input type="text" placeholder="Usuario" class="form-control" name="username">
                             </div>
                             <div class="col-sm-6 form-group">
                                 <label>Senha</label>
-                                <input type="password" placeholder="Senha" class="form-control">
+                                <input type="password" placeholder="Senha" class="form-control" name="senha">
                             </div>
-                        </div>	
+                        </div>
                         <button type="button" class="btn btn-block btn-info">Cadastrar</button> 					
                     </div>
                 </form> 
