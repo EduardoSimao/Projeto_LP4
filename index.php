@@ -10,15 +10,14 @@
 
     <title>Agenda</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="view/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="view/css/heroic-features.css" rel="stylesheet">
-
+    <?php include("view/bootstrap.php"); ?>
+  
   </head>
 
   <body>
+
+  <?php include("view/menu.php"); ?>
+
     <!-- Page Content -->
     <div class="container">
 
@@ -89,10 +88,11 @@
 
     </div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="view/jquery/jquery.min.js"></script>
-    <script src="view/js/bootstrap.bundle.min.js"></script>
+  <?php include("view/bootstrap.php"); ?>
 
   </body>
+
+
+    <?php include("view/footer.php"); ?>
 
 </html>

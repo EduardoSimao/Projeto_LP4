@@ -31,7 +31,7 @@ $run_user = mysqli_query($connection, $select_user);
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Profile - <?php echo $_SESSION['nome'] ?></title>
+    <title>Perfil - <?php echo $_SESSION['nome'] ?></title>
     <script src="js/Validar.js"></script>    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <?php include("bootstrap.php"); ?>
@@ -60,19 +60,19 @@ $run_user = mysqli_query($connection, $select_user);
                             </div>
                             <div class="form-group">                          
                                 <div class="col-xs-6">
-                                    <label><h4>Username</h4></label>
+                                    <label><h4>Usuario</h4></label>
                                     <input type="text" class="form-control" name="username" value= '<?php echo $row['username']; ?>'>
                                 </div>
                             </div>          
                             <div class="form-group">                          
                                 <div class="col-xs-6">
-                                    <label><h4>Data de Nasciemtno</h4></label>
+                                    <label><h4>Data de Nascimento</h4></label>
                                     <input type="date" class="form-control" name="dtNascimento" value= '<?php echo date('Y-m-d', strtotime($row['data_nascimento'])); ?>'>
                                 </div>
                             </div> 
                             <div class="form-group">                          
                                 <div class="col-xs-6">
-                                    <label><h4>Email</h4></label>
+                                    <label><h4>E-mail</h4></label>
                                     <input type="email" class="form-control" name="email" value= '<?php echo $row['email']; ?>'>
                                 </div>
                             </div>
@@ -111,4 +111,9 @@ $run_user = mysqli_query($connection, $select_user);
         </div><!--/row-->   
     </div>
 </body>
+
+  <footer class="">
+    <?php include("footer.php"); ?>
+  </footer>
+
 </html>

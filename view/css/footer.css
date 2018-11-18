@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+html, body {height:100%;}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.copyright{
+	color:#f0f0f0;
+}
+
+.copyright p{
+   margin: 15px 0 15px -30px
+}
+
+footer{
+	position:absolute;
+    bottom:0;
+    width:100%;
+	background-color:#222222;
+	padding: 10px 0;
+}
+
+footer .menu li a{
+	color:#b1aca1;
+	padding:10px;
+	text-decoration:none;
+}
+
+footer .menu li a:hover{
+	color:#7dabdb;
+}
+
+.fa.fa-github , {
+	color:#b1aca1;
+	font-size:20px;
+	padding:10px;
+}
+
+.fa.fa-github:hover, {
+	color:#6794c2;
+}

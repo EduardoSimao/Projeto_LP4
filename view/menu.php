@@ -1,14 +1,14 @@
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">WebSiteName</a>
+        <a class="navbar-brand" href="#">appointment</a>
       </div>
 <?php 
 
 if(empty($_SESSION['nome'])){
 ?>  
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Pagina Inicial</a></li>
+            <li class="active"><a href="index.php">Pagina Inicial</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="cadastroUsuario.php"><span class="glyphicon glyphicon-user"></span> Cadastrar</a></li>
@@ -26,7 +26,7 @@ if(empty($_SESSION['nome'])){
               </ul>
             </li>
             <li><a href="userPerfil.php">Perfil</a></li>
-            <li><a href="#">Sobre</a></li>
+            <li><a href="index.php">Sobre</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
           <li class="navbar-brand"><?php echo "Bem vindo, " . $_SESSION['nome'] ?></li>
