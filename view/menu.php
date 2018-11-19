@@ -26,7 +26,6 @@ if(empty($_SESSION['nome'])){
               </ul>
             </li>
             <li><a href="userPerfil.php">Perfil</a></li>
-            <li><a href="index.php">Sobre</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
           <li class="navbar-brand"><?php echo "Bem vindo, " . $_SESSION['nome'] ?></li>
