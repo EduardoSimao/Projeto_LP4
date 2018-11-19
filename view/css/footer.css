@@ -6,7 +6,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-.copyright{
+.copyright {
 	color:#f0f0f0;
 }
 
@@ -20,7 +20,7 @@ footer{
 	left:0;
     bottom:0;
     width:100%;
-	background-color:#222222;
+	background-color:#222222 !important;
 	padding: 10px 0;
 }
 

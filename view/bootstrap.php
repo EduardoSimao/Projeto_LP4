@@ -12,6 +12,4 @@
   <script src="js/Validar.js"></script>
 
   <!-- index -->
-  <link href="view/css/bootstrap.min.css" rel="stylesheet">
-  <script src="view/jquery/jquery.min.js"></script>
-  <script src="view/js/bootstrap.bundle.min.js"></script>
+  <link href="css/style.css" rel="stylesheet">
