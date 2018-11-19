@@ -8,11 +8,11 @@
 if(empty($_SESSION['nome'])){
 ?>  
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.php">Pagina Inicial</a></li>
+            <li class="active"><a href="../index.php">Pagina Inicial</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="cadastroUsuario.php"><span class="glyphicon glyphicon-user"></span> Cadastrar</a></li>
-            <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Entrar</a></li>
+            <li><a href="view/cadastroUsuario.php"><span class="glyphicon glyphicon-user"></span> Cadastrar</a></li>
+            <li><a href="view/login.php"><span class="glyphicon glyphicon-log-in"></span> Entrar</a></li>
           </ul>
     </div>
   </nav> 
@@ -22,11 +22,11 @@ if(empty($_SESSION['nome'])){
             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Agenda <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Ver todos eventos</a></li>
-                <li><a href="#">Cadastrar evento</a></li>
+                <li><a href="evento.php">Cadastrar evento</a></li>
               </ul>
             </li>
             <li><a href="userPerfil.php">Perfil</a></li>
-            <li><a href="index.php">Sobre</a></li>
+            <li><a href="../index.php">Sobre</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
           <li class="navbar-brand"><?php echo "Bem vindo, " . $_SESSION['nome'] ?></li>

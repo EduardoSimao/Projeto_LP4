@@ -24,7 +24,7 @@
       <!-- Jumbotron Header -->
       <header class="jumbotron my-4">
         <h1 class="display-3">Conheça a equipe!</h1>
-        <p class="lead">Neste projeto a equipe criou um site de Agenda de Contatos aproveitando todo conteúdo de todas as aulas de Linguagem de Programação IV-INTERNET, e também utilizando-se do Bootstrap para melhor performance e layout das páginas.</p>
+        <p class="lead">Neste projeto a equipe criou um site de Agenda de Compromissos aproveitando todo conteúdo de todas as aulas de Linguagem de Programação IV-INTERNET, e também utilizando-se do Bootstrap para melhor performance e layout das páginas.</p>
         <a href="https://github.com/EduardoSimao/Projeto_LP4" class="btn btn-primary btn-lg">Projeto no GitHub</a>
       </header>
 
@@ -88,7 +88,6 @@
 
     </div>
 
-  <?php include("view/bootstrap.php"); ?>
 
   </body>
 
