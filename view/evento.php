@@ -57,6 +57,9 @@ Processo('incluir');
                         </div>
                         
                         <button type="button" class="btn btn-block btn-info" onclick="validar(document.form);">Cadastrar</button> 					
+                        <br /><center> Ou </center><br />
+                        <a href="addCSV.php"><button type="button" class="btn btn-block btn-info">Enviar Arquivo</button></a>				
+
                         <input type="hidden" name="ok" id="ok" />   
                     </div>
                 </form> 
