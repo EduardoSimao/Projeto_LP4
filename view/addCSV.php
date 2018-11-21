@@ -29,11 +29,11 @@ Processo('incluirFile');
                 <h3>Upload</h3>
                 <input type="file" name="arq1" value="" class="file-upload"required /><br>
                                
-                <button class="btn btn-success" type="button" onclick="validar(document.formFile)">
+                <button class="btn btn-primary btn-upload" type="button" onclick="validar(document.formFile)">
                 <span class="glyphicon glyphicon-download-alt"></span> Enviar
                 </button>
                 <input type="hidden" name="ok" id="ok" /> 
-                <a href="homepage.php"> <button class="btn btn-danger" type="button">Cancelar</button></a>
+                <a href="homepage.php"> <button class="btn btn-primary btn-upload" type="button">Cancelar</button></a>
             </form>
         </div>
     </div>

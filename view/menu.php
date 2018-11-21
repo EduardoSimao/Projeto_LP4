@@ -22,9 +22,6 @@ if(empty($_SESSION['nome'])){
       <div class="navbar-header">
         <a class="navbar-brand" href="index.php">Agenda</a>
       </div>
-      <ul class="nav navbar-nav">
-            <li><a href="sobre.php">Conheça a Equipe</a></li>
-          </ul>
           <ul class="nav navbar-nav">
             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Compromissos <span class="caret"></span></a>
               <ul class="dropdown-menu">

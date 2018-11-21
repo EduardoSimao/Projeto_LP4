@@ -38,9 +38,9 @@ class Usuario {
         $this->Result = $Acesso->result;
     }
     
-    public function alterar($nome, $username, $senha, $data_nascimento, $genero, $telefone, $email, $id) {
+    public function alterar($nome, $username, $data_nascimento, $genero, $telefone, $email, $id) {
 
-        $update = 'update users set nome="' . $nome . '", username="' . $username . '" , senha="' . $senha . '", data_nascimento="' . $data_nascimento . '", sexo="' . $genero . '", telefone="' . $telefone . '", email="' . $email . '" where id="' . $id . '"';
+        $update = 'update users set nome="' . $nome . '", username="' . $username . '", data_nascimento="' . $data_nascimento . '", sexo="' . $genero . '", telefone="' . $telefone . '", email="' . $email . '" where id="' . $id . '"';
 
         $Acesso = new Acesso();
 
