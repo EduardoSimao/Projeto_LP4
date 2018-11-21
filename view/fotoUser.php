@@ -11,7 +11,7 @@ Processo('altFoto');
             <h6>Alterar Foto</h6>
             <input type="file"  name="foto" class="text-center center-block file-upload">
         </center><br />
-        <input type="button" class="btn btn-light" name="button" value="Alterar Foto" onclick="validarImagem(document.editFoto);"/>
+        <input type="button" class="btn btn-primary" name="button" value="Alterar Foto" onclick="validarImagem(document.editFoto);"/>
         <input type="hidden" name="ok" id="ok" />
         <input type="hidden" name="processo" />
     </form>

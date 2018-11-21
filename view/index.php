@@ -1,93 +1,52 @@
-<!DOCTYPE html>
+
 <html>
-
-  <head>
-
+    <head>
     <meta charset="utf-8">
-
-    <title>Agenda</title>
-
     <?php include("bootstrap.php"); ?>
-  
-  </head>
+    <title>Projeto LP4</title>
 
-  <body>
-
-  <?php include("menu.php"); ?>
-
-    <!-- Page Content -->
+    </head>
+    <body>
+    <?php include("menu.php"); ?>
     <div class="container">
-
-      <!-- Jumbotron Header -->
-      <header class="jumbotron my-4" id="radio">
-        <h1 class="display-3">Conheça a equipe!</h1>
-        <p class="lead">Neste projeto a equipe criou um site de Agenda de Compromissos aproveitando todo conteúdo de todas as aulas de Linguagem de Programação IV-INTERNET, e também utilizando-se do Bootstrap para melhor performance e layout das páginas.</p>
-        <a href="https://github.com/EduardoSimao/Projeto_LP4" class="btn btn-primary btn-lg">Projeto no GitHub</a>
-      </header>
-
-      <!-- Page Features -->
-      <div>
-
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img class="card-img-top" src="https://avatars3.githubusercontent.com/u/37407940?s=400&v=4" alt="" width=200>
-            <div class="card-body">
-              <h4 class="card-title">Thaís Lopes</h4>
-              <p class="card-text">Criadora de lindíssimas páginas de gato pela rede, assume novos desafios a cada projeto. Função: Back-End.</p>
+        <header class="jumbotron my-4" id="radio">
+            <div class="col-lg-4 col-md-6 mb-12">
+            <img class="img" class="rounded float-left" src="http://www.fatecpg.com.br/Imagens%20Gerais/logotipo-fatec-pg.png" width="300">
             </div>
-            <div class="card-footer">
-              <a href="https://github.com/Tclsantos09" class="btn btn-primary">Link GitHub</a>
+            <h1 class="display-4">Projeto LP4 - SITE</h1>
+            <p class="lead">Agenda de compromissos</p>
+        </header>
+    </div>
+    <div class="container">
+        <div class="col-lg-4 col-md-12 mb-12">
+            <div class="card" style="width: 22rem; border: solid 1px #ff6666; border-radius:2%; padding:5px 3px 3px 18px">
+            <img class="card-img-top" src="https://static.thenounproject.com/png/72583-200.png" width="180">
+                <div class="card-body">
+                <p>Cadastre, modifique ou exclua eventos ou compromissos, com a Agenda: auxilía na 
+                organização pessoal ou corporativa e dá apoio a tomada de decisão</p>
+                </div>
             </div>
-          </div>
         </div>
-
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img class="card-img-top" src="https://avatars1.githubusercontent.com/u/42583282?s=400&v=4" alt="" width=200>
-            <div class="card-body">
-              <h4 class="card-title">Gustavo Carvalho</h4>
-              <p class="card-text">Desenvolvedor gatinho, análise boa, mas não muito veloz, segue o lema: devagar e sempre. Função: Front-End.</p>
+        <div class="col-lg-4 col-md-12 mb-12">
+            <div class="card" style="width: 22rem; border: solid 1px #ff6666; border-radius:2%; padding:5px 3px 3px 18px">
+            <img class="card-img-top" src="https://cdn.icon-icons.com/icons2/936/PNG/512/group-profile-users_icon-icons.com_73540.png" width="180">
+                <div class="card-body">
+                <p>Desenvolvido por uma das mehores equipes da turma de ADS 4° semestre noturno do ano de 
+                2018.</p>
+                <a href="sobre.php" class="btn btn-primary">Conheça a Equipe</a>
+                </div>
             </div>
-            <div class="card-footer">
-              <a href="https://github.com/GustavoCarvalhoPessoa" class="btn btn-primary">Link GitHub</a>
-            </div>
-          </div>
         </div>
-
-         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img class="card-img-top" src="https://avatars1.githubusercontent.com/u/41209185?s=400&v=4" alt="" width=200>
-            <div class="card-body">
-              <h4 class="card-title">Eduardo Simão</h4>
-              <p class="card-text">Programador conceituado na área de TI, requisitado, afiado como a espada de um samurai. Função: Back-End.</p>
+        <div class="col-lg-4 col-md-12 mb-12">
+            <div class="card" style="width: 22rem; border: solid 1px #ff6666; border-radius:2%; padding:5px 3px 3px 18px">
+            <img class="card-img-top" src="">
+                <div class="card-body">
+                <p></p>
+                </div>
             </div>
-            <div class="card-footer">
-              <a href="https://github.com/EduardoSimao" class="btn btn-primary">Link GitHub</a>
-            </div>
-          </div>
         </div>
-
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img class="card-img-top" src="https://avatars2.githubusercontent.com/u/37520274?s=400&v=4" alt="" width=200>
-            <div class="card-body">
-              <h4 class="card-title">Victoria Alícia</h4>
-              <p class="card-text">Desenvolvedora de sites maravilhosos, sempre podendo atender as demandas da paulista. Função: Front-End</p>
-            </div>
-            <div class="card-footer">
-              <a href="https://github.com/rodovalhovic" class="btn btn-primary">Link GitHub</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
- 
-
     </div>
 
-  </body>
-
-
-  <?php include("footer.php"); ?>
-
+    </body>
+    <?php include("footer.php"); ?>
 </html>

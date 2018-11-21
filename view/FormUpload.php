@@ -19,6 +19,7 @@
 <head>
   <meta charset="utf-8">
   <title>Upload CSV</title>
+  <?php include("bootstrap.php"); ?>
 </head>
 <body>
   <h3>Formulário Upload</h3>

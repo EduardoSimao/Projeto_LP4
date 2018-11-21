@@ -7,7 +7,7 @@
 
   <body>
   <?php include("menu.php"); ?>
-
+  <br><br><br>
     <div class="container">
       <h1 class="well">Entrar</h1>
       <div class="col-lg-12 well">
@@ -24,13 +24,13 @@
               </div>
               <div class="row">				
                 <div class="col-sm-12 text-center">
-                  <button type="submit" class="btn btn-block btn-info">Login</button> 
+                  <button type="submit" class="btn btn-block btn-primary" >Login</button> 
                 </div>
               </div>
           </form>	
       </div>				  
       </div>
-    </div>
+    </div><br><br><br><br><br>
   </body>
 
   <footer class="">

@@ -54,13 +54,13 @@ Processo('incluir');
                                 <input type="radio" name="genero" value="outros"> Outro
                             </div>
                         </div>
-                        <button type="button" class="btn btn-block btn-info" onclick="validar(document.form);">Cadastrar</button> 					
+                        <button type="button" class="btn btn-block btn-primary" onclick="validar(document.form);">Cadastrar</button> 					
                         <input type="hidden" name="ok" id="ok" />   
                     </div>
                 </form> 
             </div>
         </div>
-    </div>
+    </div><br>
 </body>
 
   <footer class="">

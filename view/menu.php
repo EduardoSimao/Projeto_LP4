@@ -5,10 +5,10 @@ if(empty($_SESSION['nome'])){
 <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="index.php">Compromissos</a>
+          <a class="navbar-brand" href="index.php">Agenda</a>
         </div>
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.php">Pagina Inicial</a></li>
+            <li><a href="sobre.php">Conheça a Equipe</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="cadastroUsuario.php"><span class="glyphicon glyphicon-user"></span> Cadastrar</a></li>
@@ -20,13 +20,16 @@ if(empty($_SESSION['nome'])){
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="homepage.php">Compromissos</a>
+        <a class="navbar-brand" href="index.php">Agenda</a>
       </div>
+      <ul class="nav navbar-nav">
+            <li><a href="sobre.php">Conheça a Equipe</a></li>
+          </ul>
           <ul class="nav navbar-nav">
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Agenda <span class="caret"></span></a>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Compromissos <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Ver todos eventos</a></li>
-                <li><a href="evento.php">Cadastrar evento</a></li>
+                <li><a href="listarevento.php">Listar Eventos</a></li>
+                <li><a href="evento.php">Cadastrar Evento</a></li>
               </ul>
             </li>
             <li><a href="userPerfil.php">Perfil</a></li>
