@@ -32,6 +32,7 @@ if ($check_user == 1){
 } else {
 
     // falhou o login 
-    echo "<p>Username ou senha invalidos. <a href=\"../view/login.php\">Tente novamente</a></p>";
+    echo '<script>alert("Email ou Senha Invalido!");</script>';
+    echo '<script>window.location="../view/login.php";</script>';
 }
 ?>

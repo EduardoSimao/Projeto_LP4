@@ -29,7 +29,7 @@
         </div>
         <div class="col-lg-4 col-md-12 mb-12">
             <div class="card" style="width: 22rem; border: solid 1px #ff6666; border-radius:2%; padding:5px 3px 3px 18px">
-            <img class="card-img-top" src="https://cdn.icon-icons.com/icons2/936/PNG/512/group-profile-users_icon-icons.com_73540.png" width="180">
+            <img class="card-img-top" src="img/grupo.png" width="180">
                 <div class="card-body">
                 <p>Desenvolvido por uma das mehores equipes da turma de ADS 4° semestre noturno do ano de 
                 2018.</p>
