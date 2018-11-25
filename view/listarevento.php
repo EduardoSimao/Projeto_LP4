@@ -7,6 +7,18 @@ if(!isset ($_SESSION['nome']) == true)
  
 
 }
+$hostname = 'localhost';
+$username = 'root';
+$password = '';
+$db = 'agendadb';
+
+$row = array();
+
+$connection = new mysqli($hostname, $username, $password);
+mysqli_select_db($connection, $db);
+
+$select_user = "SELECT * FROM agenda WHERE id_users=".$_SESSION['id_usurio']."";
+$compromissos = mysqli_query($connection, $select_user) or die ('Error');
 
 ?>
 
@@ -18,37 +30,36 @@ if(!isset ($_SESSION['nome']) == true)
 </head>
 
 <body>
-    <?php include("menu.php");?>
-    <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
+<?php include("menu.php");?>
+<div class="container">
+        <table class="table">
+            <thead align="center">
+            <th scope="col">ID</th>
+            <th scope="col">Titulo</th>
+            <th scope="col">Data</th>
+            <th scope="col">Hora</th>
+            <th scope="col">Descrição</th>
+            <th scope="col">Local</th>
+            <th class="actions">Ações</th>
+            </thead>
+
+            <?php while ($row = mysqli_fetch_array($compromissos))  { ?>
+                <tbody >
+                <th scope="row"><?php echo $row['idagenda']; ?></th>
+                <td> <?php echo $row['titulo']; ?> </td>
+                <td> <?php echo $row['data']; ?> </td>
+                <td> <?php echo $row['hora']; ?> </td>
+                <td> <?php echo $row['descricao']; ?> </td>
+                <td> <?php echo $row['local']; ?> </td>
+                <td class="actions">
+                  <a class="btn btn-success btn-xs" href="#">Visualizar</a>
+                  <a class="btn btn-warning btn-xs" href="#">Editar</a>
+                  <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
+                </td>
+                </tbody>
+            <?php } ?>
+        </table>
+</div>
 
 </body>
 

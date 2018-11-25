@@ -8,14 +8,14 @@ function Processo($Processo) {
  
         case 'incluir':
  
-            global $linha; 
-            global $rs;
+            global $linhaAgenda; 
+            global $rsAgenda;
  
             $agenda = new Agenda();
  
             $agenda->listar("select * from agenda"); 
-            $linha = $agenda->Linha;
-            $rs = $agenda->Result;
+            $linhaAgenda = $agenda->Linha;
+            $rsAgenda = $agenda->Result;
  
             if (isset($_POST['ok'])) {
                 if ($_POST['ok'] == 'true'){
@@ -29,14 +29,14 @@ function Processo($Processo) {
         
         case 'listar':
  
-            global $linha; 
-            global $rs;
+            global $linhaAgenda; 
+            global $rsAgenda;
  
             $agenda = new Agenda();
  
             $agenda->listar("select * from agenda"); 
-            $linha = $agenda->Linha;
-            $rs = $agenda->Result;
+            $linhaAgenda = $agenda->Linha;
+            $rsAgenda = $agenda->Result;
  
             if (isset($_POST['ok'])) {
                 if ($_POST['ok'] == 'true'){
@@ -50,13 +50,13 @@ function Processo($Processo) {
 
         case 'alterar':
  
-            global $linha; 
-            global $rs;
+            global $linhaAgenda; 
+            global $rsAgenda;
 
             $agenda = new Agenda();
             $agenda->listar("select * from agenda where idagenda=" .  $_SESSION['idagenda']);
-            $linha = $agenda->Linha;
-            $rs = $agenda->Result;
+            $linhaAgenda = $agenda->Linha;
+            $rsAgenda = $agenda->Result;
 
             if (isset($_POST['ok'])) {
                 if ($_POST['ok'] == 'true'){
@@ -69,13 +69,13 @@ function Processo($Processo) {
 
         case 'excluir':
  
-            global $linha; 
-            global $rs;
+            global $linhaAgenda; 
+            global $rsAgenda;
 
             $agenda = new Agenda();
             $agenda->listar("select * from agenda where idagenda=" .  $_SESSION['idagenda']);
-            $linha = $agenda->Linha;
-            $rs = $agenda->Result;
+            $linhaAgenda = $agenda->Linha;
+            $rsAgenda = $agenda->Result;
 
             if (isset($_POST['ok'])) {
                 if ($_POST['ok'] == 'true'){
@@ -89,14 +89,14 @@ function Processo($Processo) {
 
         case 'incluirFile':
  
-            global $linha; 
-            global $rs;
+            global $linhaAgenda; 
+            global $rsAgenda;
  
             $agenda = new Agenda();
  
             $agenda->listar("select * from agenda"); 
-            $linha = $agenda->Linha;
-            $rs = $agenda->Result;
+            $linhaAgenda = $agenda->Linha;
+            $rsAgenda = $agenda->Result;
  
             if (isset($_POST['ok'])) {
                 if ($_POST['ok'] == 'true'){
