@@ -53,8 +53,8 @@ $compromissos = mysqli_query($connection, $select_user) or die ('Error');
                 <td> <?php echo $row['local']; ?> </td>
                 <td class="actions">
                   <a class="btn btn-success btn-xs" href="#">Visualizar</a>
-                  <a class="btn btn-warning btn-xs" href="#">Editar</a>
-                  <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
+                  <a class="btn btn-warning btn-xs" href="alterarEvento.php?idagenda=<?php echo $row["idagenda"];?>">Editar</a>
+                  <a class="btn btn-danger btn-xs"  data-toggle="modal" data-target="#delete-modal"><input type="button" value="Excluir Evento" onclick="javascript: if (confirm('Você realmente deseja excluir seu Evento?'))location.href='listarevento.php?ok=excluir&idagenda=<?php echo $row["idagenda"]; ?>'" /></a>
                 </td>
                 </tbody>
             <?php } ?>

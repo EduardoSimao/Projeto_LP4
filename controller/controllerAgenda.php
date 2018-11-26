@@ -54,17 +54,18 @@ function Processo($Processo) {
             global $rsAgenda;
 
             $agenda = new Agenda();
-            $agenda->listar("select * from agenda where idagenda=" .  $_SESSION['idagenda']);
+            $agenda->listar("select * from agenda where idagenda=" .  $_REQUEST['idagenda']."");
             $linhaAgenda = $agenda->Linha;
             $rsAgenda = $agenda->Result;
 
             if (isset($_POST['ok'])) {
                 if ($_POST['ok'] == 'true'){
-                    $agenda->alterar($_POST['titulo'], $_POST["data"], $_POST["hora"], $_POST["descricao"], $_POST["local"], $_POST["idagenda"]);
+                    $agenda->alterar($_POST['titulo'], $_POST["data"], $_POST["hora"], $_POST["descricao"], $_POST["local"]);
                     echo '<script>alert("Alterado com sucesso !");</script>'; 
                     echo '<script>window.location="../view/homepage.php";</script>'; 
                 }
             }
+
         break;
 
         case 'excluir':
@@ -73,7 +74,7 @@ function Processo($Processo) {
             global $rsAgenda;
 
             $agenda = new Agenda();
-            $agenda->listar("select * from agenda where idagenda=" .  $_SESSION['idagenda']);
+            $agenda->listar("select * from agenda where idagenda=" .  $_REQUEST['idagenda']);
             $linhaAgenda = $agenda->Linha;
             $rsAgenda = $agenda->Result;
 
@@ -84,7 +85,7 @@ function Processo($Processo) {
                     echo '<script>window.location="../view/homepage.php";</script>'; 
                 }
             }
- 
+
         break;
 
         case 'incluirFile':

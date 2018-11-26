@@ -46,6 +46,10 @@ class Agenda {
         $Acesso->Conexao();
 
         $Acesso->Query($update);
+
+        $this->Linha = mysqli_num_rows($Acesso->result);
+
+        $this->Result = $Acesso->result;
     }
 
     public function excluir($idagenda) { 
