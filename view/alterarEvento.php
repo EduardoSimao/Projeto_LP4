@@ -5,7 +5,7 @@ session_start();
 if(!isset ($_SESSION['nome']) == true)
 {
   unset($_SESSION['nome']);
-  header('location:homepage.php');
+  header('location:listarevento.php');
 }
 
 require_once('../controller/controllerAgenda.php');

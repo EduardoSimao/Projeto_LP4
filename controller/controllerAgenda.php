@@ -21,7 +21,7 @@ function Processo($Processo) {
                 if ($_POST['ok'] == 'true'){
                     $agenda->cadastrar($_POST['titulo'], $_POST["data"], $_POST["hora"], $_POST["descricao"], $_POST["local"], $_SESSION['id_usurio']);
                     echo '<script>alert("Agendado com sucesso !");</script>';
-                    echo '<script>window.location="../view/homepage.php";</script>';
+                    echo '<script>window.location="../view/listarevento.php";</script>';
                 }
             }
  
@@ -42,7 +42,7 @@ function Processo($Processo) {
                 if ($_POST['ok'] == 'true'){
                     $agenda->listar($_POST['titulo'], $_POST["data"], $_POST["hora"], $_POST["descricao"], $_POST["local"], $_POST["idagenda"]);
                     echo '<script>alert("Sua Agenda");</script>';
-                    echo '<script>window.location="../view/homepage.php";</script>';
+                    echo '<script>window.location="../view/listarevento.php";</script>';
                 }
             }
  
@@ -62,7 +62,7 @@ function Processo($Processo) {
                 if ($_POST['ok'] == 'true'){
                     $agenda->alterar($_POST['titulo'], $_POST["data"], $_POST["hora"], $_POST["descricao"], $_POST["local"]);
                     echo '<script>alert("Alterado com sucesso !");</script>'; 
-                    echo '<script>window.location="../view/homepage.php";</script>'; 
+                    echo '<script>window.location="../view/listarevento.php";</script>'; 
                 }
             }
 
@@ -82,7 +82,7 @@ function Processo($Processo) {
                 if ($_POST['ok'] == 'true'){
                     $agenda->alterar($_POST['idagenda']);
                     echo '<script>alert("Excluido com sucesso !");</script>'; 
-                    echo '<script>window.location="../view/homepage.php";</script>'; 
+                    echo '<script>window.location="../view/listarevento.php";</script>'; 
                 }
             }
 
@@ -129,7 +129,7 @@ function Processo($Processo) {
                                 }
                                 fclose($a);
                                 echo '<script>alert("Adicionado com sucesso !");</script>'; 
-                                echo '<script>window.location="../view/homepage.php";</script>';                                
+                                echo '<script>window.location="../view/listarevento.php";</script>';                                
                             }
                             
                         }

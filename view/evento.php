@@ -5,7 +5,7 @@ session_start();
 if(!isset ($_SESSION['nome']) == true)
 {
   unset($_SESSION['nome']);
-  header('location:homepage.php');
+  header('location:listarevento.php');
  
 
 }
@@ -58,7 +58,7 @@ Processo('incluir');
                         
                         <button type="button" class="btn btn-block btn-primary" onclick="validar(document.form);">Cadastrar</button> 					
                         <br /><center> Ou </center><br />
-                        <a href="addCSV.php"><button type="button" class="btn btn-block btn-primary">Enviar Arquivo</button></a>				
+                        <a href="addCSV.php"><button type="button" class="btn btn-block btn-primary">Enviar Arquivo CSV</button></a>				
 
                         <input type="hidden" name="ok" id="ok" />   
                     </div>

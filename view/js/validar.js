@@ -48,14 +48,3 @@ function validarImagem(formulario){
     formulario.processo.value='altImg';
     formulario.submit();
 }
-
-function validarSenha(){
-    senha = document.getElementsByName('senha').value;
-    confSenha = document.getElementsByName('confSenha').value;
- 
-    if(senha!= confSenha) {
-        confSenha.setCustomValidity("Senhas diferentes!");
-        return false; 
-    }
-    return true;
- }

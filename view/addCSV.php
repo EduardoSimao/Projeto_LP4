@@ -4,7 +4,7 @@ session_start();
 if(!isset ($_SESSION['nome']) == true)
 {
   unset($_SESSION['nome']);
-  header('location:homepage.php');
+  header('location:listarevento.php');
  
 }
 
@@ -26,14 +26,14 @@ Processo('incluirFile');
             <img id="profile-img" class="profile-img-card" src="img/file.png" />
             
             <form class="form-upload" method="post" enctype="multipart/form-data" action="" name="formFile">           
-                <h3>Upload</h3>
+                <h3>Upload File CSV</h3>
                 <input type="file" name="arq1" value="" class="file-upload"required /><br>
                                
                 <button class="btn btn-primary btn-upload" type="button" onclick="validar(document.formFile)">
                 <span class="glyphicon glyphicon-download-alt"></span> Enviar
                 </button>
                 <input type="hidden" name="ok" id="ok" /> 
-                <a href="homepage.php"> <button class="btn btn-primary btn-upload" type="button">Cancelar</button></a>
+                <a href="evento.php"> <button class="btn btn-primary btn-upload" type="button">Cancelar</button></a>
             </form>
         </div>
     </div>

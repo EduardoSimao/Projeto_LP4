@@ -28,7 +28,7 @@ if ($check_user == 1){
     $_SESSION['data_nascimento'] = $cadastro['data_nascimento'];
     $_SESSION['email'] = $cadastro['email'];
 
-    echo '<script>window.location="../view/index.php";</script>';
+    echo '<script>window.location="../view/listarevento.php";</script>';
 } else {
 
     // falhou o login 
