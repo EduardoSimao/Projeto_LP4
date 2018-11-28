@@ -19,7 +19,7 @@
     </div>
     <div class="container">
         <div class="col-lg-4 col-md-12 mb-12">
-            <div class="card" style="width: 22rem; border: solid 1px #ff6666; border-radius:2%; padding:5px 3px 3px 18px">
+            <div class="card cardFatec">
             <img class="card-img-top" src="https://static.thenounproject.com/png/72583-200.png" width="180">
                 <div class="card-body">
                 <p>Cadastre, modifique ou exclua eventos ou compromissos, com a Agenda: auxilía na 
@@ -28,8 +28,8 @@
             </div>
         </div>
         <div class="col-lg-4 col-md-12 mb-12">
-            <div class="card" style="width: 22rem; border: solid 1px #ff6666; border-radius:2%; padding:5px 3px 3px 18px">
-            <img class="card-img-top" src="img/grupo.png" width="180">
+            <div class="card cardFatec">
+            <img class="card-img-top" src="img/grupo.png" width="186">
                 <div class="card-body">
                 <p>Desenvolvido por uma das mehores equipes da turma de ADS 4° semestre noturno do ano de 
                 2018.</p>
@@ -38,10 +38,12 @@
             </div>
         </div>
         <div class="col-lg-4 col-md-12 mb-12">
-            <div class="card" style="width: 22rem; border: solid 1px #ff6666; border-radius:2%; padding:5px 3px 3px 18px">
-            <img class="card-img-top" src="">
+            <div class="card cardFatec">
+            <img class="card-img-top" src="img\iconMap.jpg"width="165">
                 <div class="card-body">
-                <p></p>
+                <h4>Guie-se!</h4>
+                <p>Conheça nossa faculdade pessoalmente.</p><br>
+                <a href="map.php" class="btn btn-primary">Clique aqui!</a>
                 </div>
             </div>
         </div>

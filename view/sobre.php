@@ -28,7 +28,7 @@
       <div>
 
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card" style="border: solid 1px #ff6666; border-radius:2%;padding:5px 0px 3px 20px">
+          <div class="card cardEquipe">
             <img class="card-img-top" src="https://avatars3.githubusercontent.com/u/37407940?s=400&v=4" alt="" width=215>
             <div class="card-body">
               <h4 class="card-title">Thaís Lopes</h4>
@@ -41,7 +41,7 @@
         </div>
 
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card" style="border: solid 1px #ff6666; border-radius:2%;padding:5px 0px 3px 20px">
+          <div class="card cardEquipe">
             <img class="card-img-top" src="https://avatars1.githubusercontent.com/u/42583282?s=400&v=4" alt="" width=215>
             <div class="card-body">
               <h4 class="card-title">Gustavo Carvalho</h4>
@@ -54,7 +54,7 @@
         </div>
 
          <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card"style="border: solid 1px #ff6666; border-radius:2%;padding:5px 0px 3px 20px">
+          <div class="card cardEquipe">
             <img class="card-img-top" src="https://media.licdn.com/dms/image/C4D03AQEm3dppgU9GBg/profile-displayphoto-shrink_800_800/0?e=1548288000&v=beta&t=lpKeGaUTVwy7-uBv4ZSy8yjUZXawI6gUcjwUko_NKIc" alt="" width=215>
             <div class="card-body">
               <h4 class="card-title">Eduardo Simão</h4>
@@ -67,7 +67,7 @@
         </div>
 
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card"style="border: solid 1px #ff6666; border-radius:2%;padding:5px 0px 3px 20px">
+          <div class="card cardEquipe">
             <img class="card-img-top" src="https://avatars2.githubusercontent.com/u/37520274?s=400&v=4" alt="" width=215>
             <div class="card-body">
               <h4 class="card-title">Victoria Alícia</h4>

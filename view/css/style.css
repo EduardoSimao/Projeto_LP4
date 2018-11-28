@@ -1,0 +1,11 @@
+.cardFatec{
+    width: 22rem;
+    border-radius:2%; 
+    padding:5px 3px 3px 18px;
+    box-shadow:2px 2px 5px #777;
+}
+.cardEquipe{
+     border-radius:2%;
+     padding:5px 0px 3px 20px;
+     box-shadow:2px 2px 3px #777;
+}

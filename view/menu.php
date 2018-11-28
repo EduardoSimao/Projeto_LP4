@@ -2,7 +2,7 @@
 
 if(empty($_SESSION['nome'])){
 ?>  
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse" style="box-shadow:0 10px 6px -6px #777">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="index.php">Agenda</a>
@@ -17,7 +17,7 @@ if(empty($_SESSION['nome'])){
     </div>
   </nav> 
 <?php }else{ ?>
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-inverse"style="box-shadow:0 10px 6px -6px #777">
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="../view/listarevento.php">Agenda</a>
