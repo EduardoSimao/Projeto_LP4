@@ -44,5 +44,6 @@ function initMap() {
         </script>
     </div><br>
 </body>
+<footer class="footerRegular">
   <?php include("footer.php"); ?>
 </html>

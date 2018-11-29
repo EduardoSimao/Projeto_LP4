@@ -111,5 +111,7 @@ $run_user = mysqli_query($connection, $select_user);
         </div><!--/row-->   
     </div>
 </body>
+<footer class="footerRegular">
     <?php include("footer.php"); ?>
+</footer>
 </html>

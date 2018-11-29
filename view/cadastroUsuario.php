@@ -63,7 +63,7 @@ Processo('incluir');
     </div><br>
 </body>
 
-  <footer class="">
+  <footer class="footerRegular">
     <?php include("footer.php"); ?>
   </footer>
 </html>

@@ -85,7 +85,7 @@ $compromissos = mysqli_query($connection, $select_evento) or die ('Error');
     </div>
 <?php } ?>
 </body>
-  <footer class="">
+  <footer class="footerRegular">
     <?php include("footer.php"); ?>
   </footer>
 </html>

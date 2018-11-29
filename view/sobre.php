@@ -29,52 +29,52 @@
 
         <div class="col-lg-3 col-md-6 mb-4">
           <div class="card cardEquipe">
-            <img class="card-img-top" src="https://avatars3.githubusercontent.com/u/37407940?s=400&v=4" alt="" width=215>
-            <div class="card-body">
+            <img class="card-img-top imgCardEquipe" src="https://avatars3.githubusercontent.com/u/37407940?s=400&v=4" alt="" width=215>
+            <div class="card-body cardTextEquipe">
               <h4 class="card-title">Thaís Lopes</h4>
               <p class="card-text">Criadora de lindíssimas páginas de gato pela rede, assume novos desafios a cada projeto. Função: Back-End.</p>
-            </div>
+            </div>    
             <div class="card-footer">
-              <a href="https://github.com/Tclsantos09" class="btn btn-primary"target="_blank">Link GitHub</a>
-            </div>
+              <a href="https://github.com/Tclsantos09" class="btn btn-primary imgCard"target="_blank">Link GitHub</a>
+            </div>        
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 mb-4">
           <div class="card cardEquipe">
-            <img class="card-img-top" src="https://avatars1.githubusercontent.com/u/42583282?s=400&v=4" alt="" width=215>
-            <div class="card-body">
+            <img class="card-img-top imgCardEquipe" src="https://avatars1.githubusercontent.com/u/42583282?s=400&v=4" alt="" width=215>
+            <div class="card-body cardTextEquipe">
               <h4 class="card-title">Gustavo Carvalho</h4>
               <p class="card-text">Desenvolvedor gatinho, análise boa, mas não muito veloz, segue o lema: devagar e sempre. Função: Front-End.</p>
-            </div>
+            </div>    
             <div class="card-footer">
-              <a href="https://github.com/GustavoCarvalhoPessoa" class="btn btn-primary"target="_blank">Link GitHub</a>
-            </div>
+              <a href="https://github.com/GustavoCarvalhoPessoa" class="btn btn-primary imgCard"target="_blank">Link GitHub</a>
+            </div>        
           </div>
         </div>
 
          <div class="col-lg-3 col-md-6 mb-4">
           <div class="card cardEquipe">
-            <img class="card-img-top" src="https://media.licdn.com/dms/image/C4D03AQEm3dppgU9GBg/profile-displayphoto-shrink_800_800/0?e=1548288000&v=beta&t=lpKeGaUTVwy7-uBv4ZSy8yjUZXawI6gUcjwUko_NKIc" alt="" width=215>
-            <div class="card-body">
+            <img class="card-img-top imgCardEquipe" src="https://media.licdn.com/dms/image/C4D03AQEm3dppgU9GBg/profile-displayphoto-shrink_800_800/0?e=1548288000&v=beta&t=lpKeGaUTVwy7-uBv4ZSy8yjUZXawI6gUcjwUko_NKIc" alt="" width=215>
+            <div class="card-body cardTextEquipe">
               <h4 class="card-title">Eduardo Simão</h4>
-              <p class="card-text">Programador conceituado na área de TI, requisitado, afiado como a espada de um samurai. Função: Back-End.</p>
-            </div>
+              <p class="card-text">Programador conceituado na área de TI, requisitado, ele é afiado como a espada de um samurai. Função: Back-End.</p>
+            </div>      
             <div class="card-footer">
-              <a href="https://github.com/EduardoSimao" class="btn btn-primary"target="_blank">Link GitHub</a>
-            </div>
+              <a href="https://github.com/EduardoSimao" class="btn btn-primary imgCard"target="_blank">Link GitHub</a>
+            </div>      
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 mb-4">
           <div class="card cardEquipe">
-            <img class="card-img-top" src="https://avatars2.githubusercontent.com/u/37520274?s=400&v=4" alt="" width=215>
-            <div class="card-body">
+            <img class="card-img-top imgCardEquipe" src="https://avatars2.githubusercontent.com/u/37520274?s=400&v=4" alt="" width=215>
+            <div class="card-body cardTextEquipe">
               <h4 class="card-title">Victoria Alícia</h4>
               <p class="card-text">Desenvolvedora de sites maravilhosos, sempre podendo atender as demandas da paulista. Função: Front-End</p>
             </div>
             <div class="card-footer">
-              <a href="https://github.com/rodovalhovic" class="btn btn-primary"target="_blank">Link GitHub</a>
+              <a href="https://github.com/rodovalhovic" class="btn btn-primary imgCard"target="_blank">Link GitHub</a>
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@
     </div>
   </body>
 
-
+<footer class="footerRegular">
   <?php include("footer.php"); ?>
-
+</footer>
 </html>

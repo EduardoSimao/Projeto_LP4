@@ -61,10 +61,10 @@ $compromissos = mysqli_query($connection, $select_user) or die ('Error');
             <?php } ?>
         </table>
 </div>
-
-</body>
-
-<footer>
+<footer class="footerListar">
     <?php include("footer.php");?>
 </footer>
+</body>
+
+
 </html>

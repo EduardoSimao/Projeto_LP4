@@ -1,5 +1,5 @@
 <?php include("bootstrap.php"); ?>
-<footer>
+<footer class="page-footer font-small special-color-dark pt-4">
     <div class="container">
         <div class="row text-center">
             <ul class="list-inline">

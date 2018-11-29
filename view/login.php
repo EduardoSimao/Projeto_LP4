@@ -33,7 +33,7 @@
     </div><br><br><br><br><br>
   </body>
 
-  <footer class="">
+  <footer class="footerRegular">
     <?php include("footer.php"); ?>
   </footer>
 

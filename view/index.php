@@ -17,10 +17,11 @@
             <p class="lead">Agenda de compromissos</p>
         </header>
     </div>
+
     <div class="container">
         <div class="col-lg-4 col-md-12 mb-12">
             <div class="card cardFatec">
-            <img class="card-img-top" src="https://static.thenounproject.com/png/72583-200.png" width="180">
+            <img class="card-img-top imgCard" src="img\projectIcon.png" width="180">
                 <div class="card-body">
                 <p>Cadastre, modifique ou exclua eventos ou compromissos, com a Agenda: auxilía na 
                 organização pessoal ou corporativa e dá apoio a tomada de decisão</p>
@@ -29,26 +30,28 @@
         </div>
         <div class="col-lg-4 col-md-12 mb-12">
             <div class="card cardFatec">
-            <img class="card-img-top" src="img/grupo.png" width="186">
+            <img class="card-img-top imgCard" src="img/grupo.png" width="186">
                 <div class="card-body">
                 <p>Desenvolvido por uma das mehores equipes da turma de ADS 4° semestre noturno do ano de 
                 2018.</p>
-                <a href="sobre.php" class="btn btn-primary">Conheça a Equipe</a>
+                <a href="sobre.php" class="btn btn-primary imgCard">Conheça a Equipe</a>
                 </div>
             </div>
         </div>
         <div class="col-lg-4 col-md-12 mb-12">
             <div class="card cardFatec">
-            <img class="card-img-top" src="img\iconMap.jpg"width="165">
+            <img class="card-img-top imgCard" src="img\iconMap.jpg"width="165">
                 <div class="card-body">
                 <h4>Guie-se!</h4>
-                <p>Conheça nossa faculdade pessoalmente.</p><br>
-                <a href="map.php" class="btn btn-primary">Clique aqui!</a>
+                <p>Conheça nossa faculdade pessoalmente.</p>
+                <a href="map.php" class="btn btn-primary imgCard">Clique aqui!</a>
                 </div>
             </div>
         </div>
     </div>
 
     </body>
+    <footer class="footerRegular">
     <?php include("footer.php"); ?>
+    </footer>
 </html>
