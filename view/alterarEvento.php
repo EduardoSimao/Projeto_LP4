@@ -9,7 +9,7 @@ if(!isset ($_SESSION['nome']) == true)
 }
 
 require_once('../controller/controllerAgenda.php');
-Processo('alterar');
+Processo('editar');
 
 $hostname = 'localhost';
 $username = 'root';
@@ -66,11 +66,18 @@ $compromissos = mysqli_query($connection, $select_evento) or die ('Error');
                                 <input type="text" class="form-control " name="descricao" value= '<?php echo $row['descricao']; ?>'>
                             </div>
                         </div>
-                        
-                        <button type="button" class="btn btn-block btn-primary" onclick="validar(document.form);">Alterar</button> 					
-                        <br />
-                        <input type="hidden" name="ok" id="ok" />                       
-                        <input type="hidden" name="processo"/>
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <center>
+                                    <br>
+                                    <a href="listarevento.php"><button class="btn btn-primary" type="button"> Ver Eventos </button></a>
+                                    <input type="button" class="btn btn-success" name="button" id="button" value="Alterar Dados"onclick="validarInformacao(document.form);"/>
+                                    <input type="hidden" name="ok" id="ok" />                                    
+                                    <input type="hidden" name="processo"/>
+                                    <input class="btn btn-danger" type="button" value=" Excluir Compromisso" onclick="javascript: if (confirm('Você realmente deseja excluir seu Evento?'))location.href='alterarevento.php?ok=excluir&idagenda=<?php echo $row["idagenda"]; ?>'" />
+                                </center>
+                            </div>                            
+                        </div>
                     </div>
                 </form> 
             </div>

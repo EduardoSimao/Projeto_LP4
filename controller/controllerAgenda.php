@@ -48,46 +48,32 @@ function Processo($Processo) {
  
         break;
 
-        case 'alterar':
+        case 'editar':
  
             global $linhaAgenda; 
             global $rsAgenda;
 
             $agenda = new Agenda();
-            $agenda->listar("select * from agenda where idagenda=" .  $_REQUEST['idagenda']."");
+            $agenda->listar("select * from agenda");
             $linhaAgenda = $agenda->Linha;
             $rsAgenda = $agenda->Result;
 
             if (isset($_POST['ok'])) {
-                if ($_POST['ok'] == 'true'){
+                if ($_POST['ok'] == 'true' && $_POST['processo'] == 'altInfo'){
                     $agenda->alterar($_POST['titulo'], $_POST["data"], $_POST["hora"], $_POST["descricao"], $_POST["local"], $_REQUEST['idagenda']);
                     echo '<script>alert("Alterado com sucesso !");</script>'; 
                     echo '<script>window.location="../view/listarevento.php";</script>'; 
-                }
-            }
-
-        break;
-
-        case 'excluir':
- 
-            global $linhaAgenda; 
-            global $rsAgenda;
-
-            $agenda = new Agenda();
-            $agenda->listar("select * from agenda where idagenda=" .  $_REQUEST['idagenda']);
-            $linhaAgenda = $agenda->Linha;
-            $rsAgenda = $agenda->Result;
-
-            if (isset($_POST['ok'])) {
-                if ($_POST['ok'] == 'true'){
-                    $agenda->alterar($_POST['idagenda']);
+                } 
+            }else  if (isset($_GET['ok'])) {
+                if ($_GET['ok'] == "excluir"){
+                    $agenda->excluir($_GET['idagenda']);
                     echo '<script>alert("Excluido com sucesso !");</script>'; 
                     echo '<script>window.location="../view/listarevento.php";</script>'; 
                 }
             }
+            
 
         break;
-
         case 'incluirFile':
  
             global $linhaAgenda; 
