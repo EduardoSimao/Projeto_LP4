@@ -10,6 +10,7 @@ if(!isset ($_SESSION['nome']) == true)
 
 require_once('../controller/controllerAgenda.php');
 Processo('alterar');
+
 $hostname = 'localhost';
 $username = 'root';
 $password = '';
@@ -34,7 +35,7 @@ $compromissos = mysqli_query($connection, $select_evento) or die ('Error');
 <header>
     <?php include("menu.php"); ?>
 <header>
-<?php while ($row = $compromissos) { ?>
+<?php while ($row = mysqli_fetch_array($compromissos)) { ?>
     <div class="container">
         <h1 class="well">Alterar Evento</h1>
         <div class="col-lg-12 well">
@@ -66,7 +67,7 @@ $compromissos = mysqli_query($connection, $select_evento) or die ('Error');
                             </div>
                         </div>
                         
-                        <button type="button" class="btn btn-block btn-primary" onclick="validarInformacao(document.editform);">Alterar</button> 					
+                        <button type="button" class="btn btn-block btn-primary" onclick="validar(document.form);">Alterar</button> 					
                         <br />
                         <input type="hidden" name="ok" id="ok" />                       
                         <input type="hidden" name="processo"/>

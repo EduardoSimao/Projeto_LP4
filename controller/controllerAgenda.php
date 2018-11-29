@@ -60,7 +60,7 @@ function Processo($Processo) {
 
             if (isset($_POST['ok'])) {
                 if ($_POST['ok'] == 'true'){
-                    $agenda->alterar($_POST['titulo'], $_POST["data"], $_POST["hora"], $_POST["descricao"], $_POST["local"]);
+                    $agenda->alterar($_POST['titulo'], $_POST["data"], $_POST["hora"], $_POST["descricao"], $_POST["local"], $_REQUEST['idagenda']);
                     echo '<script>alert("Alterado com sucesso !");</script>'; 
                     echo '<script>window.location="../view/listarevento.php";</script>'; 
                 }

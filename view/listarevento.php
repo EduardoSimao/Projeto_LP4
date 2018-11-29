@@ -7,6 +7,9 @@ if(!isset ($_SESSION['nome']) == true)
  
 
 }
+require_once('../controller/controllerAgenda.php');
+Processo('excluir');
+
 $hostname = 'localhost';
 $username = 'root';
 $password = '';
@@ -55,6 +58,7 @@ $compromissos = mysqli_query($connection, $select_user) or die ('Error');
                   <a class="btn btn-success btn-xs" href="#">Visualizar</a>
                   <a class="btn btn-warning btn-xs" href="alterarEvento.php?idagenda=<?php echo $row["idagenda"];?>">Editar</a>
                   <a  data-toggle="modal" data-target="#delete-modal"><input type="button" class="btn btn-danger btn-xs" value="Excluir Evento" onclick="javascript: if (confirm('Você realmente deseja excluir seu Evento?'))location.href='listarevento.php?ok=excluir&idagenda=<?php echo $row["idagenda"]; ?>'" /></a>
+                  <input type="hidden" name="ok" id="ok" />    
                 </td>
                 </tbody>
             <?php } ?>
