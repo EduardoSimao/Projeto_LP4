@@ -25,8 +25,8 @@ if(empty($_SESSION['nome'])){
           <ul class="nav navbar-nav">
             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Compromissos <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="listarevento.php">Listar Eventos</a></li>
-                <li><a href="evento.php">Cadastrar Evento</a></li>
+                <li><a href="listarevento.php">Listar Compromissos</a></li>
+                <li><a href="evento.php">Cadastrar Compromisso</a></li>
               </ul>
             </li>
             <li><a href="userPerfil.php">Perfil</a></li>

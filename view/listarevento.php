@@ -45,8 +45,15 @@ $compromissos = mysqli_query($connection, $select_user) or die ('Error');
             <th scope="col">Local</th>
             <th class="actions">Ações</th>
             </thead>
+            <?php if (!isset($compromissoss)){ ?>
+                    <tbody >           
+                    <td colspan=7><center> Nenhum compromissos cadastrado!  </center></td>
+                    </tbody>
+            <?php } ?>
 
             <?php while ($row = mysqli_fetch_array($compromissos))  { ?>
+                
+                
                 <tbody >
                 <th scope="row"><?php echo $row['idagenda']; ?></th>
                 <td> <?php echo $row['titulo']; ?> </td>

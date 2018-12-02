@@ -26,7 +26,7 @@ Processo('incluir');
     <?php include("menu.php"); ?>
 <header>
     <div class="container">
-        <h1 class="well">Cadastro de Eventos</h1>
+        <h1 class="well">Cadastro de Compromissos</h1>
         <div class="col-lg-12 well">
             <div class="row">
                 <form action="" name="form" method="POST">
@@ -34,7 +34,7 @@ Processo('incluir');
                         <div class="row">
                             <div class="col-sm-6 form-group">
                                 <label>Titulo</label>
-                                <input type="text" placeholder="Insira o titulo do evento" class="form-control" name="titulo">
+                                <input type="text" placeholder="Insira o titulo do compromissos" class="form-control" name="titulo">
                             </div>                            
                             <div class="col-sm-6 form-group">
                                 <label>Data</label>

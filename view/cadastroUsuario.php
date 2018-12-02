@@ -26,32 +26,32 @@ Processo('incluir');
                         <div class="row">
                             <div class="col-sm-6 form-group">
                                 <label>Nome Completo</label>
-                                <input type="text" placeholder="Insira seu nome completo" class="form-control" name="nome">
+                                <input type="text" placeholder="Insira seu nome completo" class="form-control" name="nome" required >
                             </div>                            
                             <div class="col-sm-6 form-group">
                                 <label>Usuario</label>
-                                <input type="text" placeholder="Usuario" class="form-control" name="username">
+                                <input type="text" placeholder="Usuario" class="form-control" name="username" required >
                             </div>                            
                             <div class="col-sm-6 form-group">
                                 <label>Senha</label>
-                                <input type="password" placeholder="Senha" class="form-control" name="senha">
+                                <input type="password" placeholder="Senha" class="form-control" name="senha" requiredd >
                             </div>					
                             <div class="col-sm-6 form-group">
                                 <label>Confirmar Senha</label>
-                                <input type="password" placeholder="Confirme sua Senha" class="form-control" name="confSenha">
+                                <input type="password" placeholder="Confirme sua Senha" class="form-control" name="confSenha" required >
                             </div>
                             <script src="js/cadastroUsuario.js"></script>
                         </div>
                         <div class="row">                        
                             <div class="col-sm-6 form-group">
                                 <label>Data de Nascimento</label>
-                                <input type="date" class="form-control" name="dtNascimento">
+                                <input type="date" class="form-control" name="dtNascimento" required >
                             </div>
                             <div class="col-sm-6 form-group">
-                                 <label>Gênero</label><br>
+                                <label>Gênero</label><br>
                                 <input type="radio" name="genero" value="homem"> Homem
                                 <input type="radio" name="genero" value="mulher"> Mulher
-                                <input type="radio" name="genero" value="outros"> Outro
+                                <input type="radio" name="genero" value="outros" checked> Outro
                             </div>
                         </div>
                         <button type="button" class="btn btn-block btn-primary" onclick="validar(document.form);">Cadastrar</button> 					
